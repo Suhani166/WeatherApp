@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <img class="weather-img" id="clear_sky_day" src="https://images.unsplash.com/photo-1601297183305-6df142704ea2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2xlYXIlMjBza3l8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="clear_sky_night" src="https://images.unsplash.com/photo-1514912885225-5c9ec8507d68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fG5pZ2h0JTIwc2t5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="cloudy_sky_day" src="https://images.unsplash.com/photo-1515887477325-ef2745e6efeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNsb3VkcyUyMGluJTIwc2t5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="cloudy_sky_night" src="https://images.unsplash.com/photo-1512936537265-78c94e715a5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGNsb3VkeSUyMHNreSUyMGluJTIwbmlnaHR8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="broken_clouds_day" src="https://images.unsplash.com/photo-1621859178739-c8dc945b556e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnJva2VuJTIwY2xvdWRzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="broken_clouds_night" src="https://images.unsplash.com/photo-1665780283238-431fdb1599d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGJyb2tlbiUyMGNsb3Vkc3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="rainy_day" src="https://images.unsplash.com/photo-1610741083757-1ae88e1a17f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFpbnklMjBkYXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="rainy_night" src="https://images.unsplash.com/photo-1468476396571-4d6f2a427ee7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhaW55JTIwZGF5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="thunderstorm_day" src="https://images.unsplash.com/photo-1594760467013-64ac2b80b7d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="">
+            <img class="weather-img" id="thunderstorm_night" src="https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHRodW5kZXJzdG9ybXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="snowy_day" src="https://images.unsplash.com/photo-1615468483751-1086fbb1a6b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNub3d5JTIwZGF5fGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="snowy_night" src="https://images.unsplash.com/photo-1615082327232-349aed90a41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c25vd3klMjBuaWdodHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="misty_day" src="https://images.unsplash.com/photo-1662887571920-b28d63897cc4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWlzdHklMjBkYXl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="weather-img" id="misty_night" src="https://images.unsplash.com/photo-1497216429614-5bd7dbd9fc48?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWlzdHklMjBuaWdodHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+
+
+		<div class="main-container">
+			<form>
+				<input
+					id="city-input"
+					type="text"
+					placeholder="Enter a city name"
+					required
+				/>
+				<button type="submit">Search</button>
+			</form>
+
+			<div class="inner-container">
+				<div class="loading">
+					<div class="loader">
+						<div class="orbe" style="--index: 0"></div>
+						<div class="orbe" style="--index: 1"></div>
+						<div class="orbe" style="--index: 2"></div>
+						<div class="orbe" style="--index: 3"></div>
+						<div class="orbe" style="--index: 4"></div>
+					</div>
+				</div>
+
+				<div class="city-container">
+					<div class="city-name">Meerut</div>
+					<div class="weather-condition">Clear</div>
+				</div>
+
+				<div class="temp-container">
+					<div class="weather-icon"><img src="" alt="" /></div>
+					<div class="temp">21.00°C</div>
+					<div class="minmax">
+						<div class="min">Min: 21.00°C</div>
+						<div class="max">Max: 21.00°C</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
